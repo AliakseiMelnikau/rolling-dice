@@ -1,6 +1,6 @@
 {
   "name": "rolling-dice",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node module imitating rollig of user-defined dices",
   "main": "index.js",
   "scripts": {
