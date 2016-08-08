@@ -1,0 +1,35 @@
+{
+  "name": "rolling-dice",
+  "version": "0.1.0",
+  "description": "Node module imitating rollig of user-defined dices",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AliakseiMelnikau/rolling-dice.git"
+  },
+  "keywords": [
+    "dice",
+    "roll"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.0"
+  },
+  "dependencies": {
+    "random-js": "^1.0.8"
+  },
+  "author": "Aliaksei Melnikau <aliaksei.melnikau@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/AliakseiMelnikau/rolling-dice/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/AliakseiMelnikau/rolling-dice/issues"
+  },
+  "homepage": "https://github.com/AliakseiMelnikau/rolling-dice#readme"
+}
