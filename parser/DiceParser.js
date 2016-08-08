@@ -5,7 +5,7 @@ const OPERATION = 'operation';
 const PERCENT_SIGN_INT_VALUE = 100;
 
 function parseDiceExpressions(expression) {
-    if (Number.isInteger(expression)) {
+    if (isInteger(expression)) {
         return [new Dice({fixedValue: Math.abs(expression),
             isNegative:(expression<0)})];
     }
@@ -40,6 +40,12 @@ function parseSingleDiceExpression(token,previousToken) {
     } else {
         throw new Error('Invalid dice expression ' + token);
     }
+}
+
+function isInteger(value) {
+    return typeof value === "number" &&
+        isFinite(value) &&
+        Math.floor(value) === value;
 }
 
 function getTokenType(token) {
